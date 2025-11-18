@@ -1,5 +1,13 @@
 # BOUNCING CIRCLE IN C (USING SDL2)
 
+## How this works:
+
+1. Window & Renderer: SDL window and renderer are created.
+2. Ball Movement: Ball position is updated each frame.
+3. Collision Detection: Ball velocity is reversed when it hits a wall.
+4. Rendering: The ball is drawn as a filled circle (pixel by pixel in this simple version).
+5. Frame Rate Control: SDL_Delay(16) roughly gives 60 FPS.
+
 ## Prequisite
 
 1. Ubuntu
@@ -34,3 +42,10 @@
    ```bash
    gcc bouncing_circle.c -o bouncing_circle.exe `sdl2-config --cflags --libs`
    ```
+
+### Tips for improvement:
+
+1. Use SDL2_gfx library to draw a circle more efficiently instead of pixel loops.
+2. Add keyboard controls or gravity for more interesting physics.
+3. Use SDL_GetTicks() for precise frame timing instead of fixed delay
+4. Resizable Window (grid area should update based on bouncing)
