@@ -4,19 +4,18 @@
 
 1. Ubuntu
 
-```bash
-# For only SDL2
-sudo apt update -y
-sudo apt install libsdl2-dev -y
-# Optional but recommended if your project uses other SDL modules:
-sudo apt install libsdl2-image-dev libsdl2-ttf-dev libsdl2-mixer-dev
-```
+   ```bash
+   # For only SDL2
+   sudo apt update -y
+   sudo apt install libsdl2-dev -y
+   # Optional but recommended if your project uses other SDL modules:
+   sudo apt install libsdl2-image-dev libsdl2-ttf-dev libsdl2-mixer-dev
+   ```
 
-```bash
-# then compile as
-gcc -Wall -Wextra -g -o bouncing_circle.out bouncing_circle.c `sdl2-config --cflags --libs` -lm
-
-```
+   ```bash
+   # then compile as
+   gcc -Wall -Wextra -g -o bouncing_circle.out bouncing_circle.c `sdl2-config --cflags --libs` -lm
+   ```
 
 2. Windows
 
